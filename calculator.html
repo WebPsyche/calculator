@@ -1,0 +1,57 @@
+<!Doctype html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+
+  <link rel="stylesheet" href="calculator.css">
+    <title>Calculator Project</title>
+</head>
+<body>
+
+<div id="calculator">
+    <div id="calculator-screen">
+        
+        <span id="question">0</span>
+            <span id="operation">0</span>
+                <span id="answer">0</span>
+       
+    
+    </div>
+    <div class="calculator-body">
+    <div id="calculator-keys">
+        <button onmousedown="number(1)">1</button>
+        <button onmousedown="number(2)">2</button>
+        <button onmousedown="number(3)">3</button>
+      
+        <button onmousedown="number(4)">4</button>
+        <button onmousedown="number(5)">5</button>
+        <button onmousedown="number(6)">6</button>
+      
+        <button onmousedown="number(7)">7</button>
+        <button onmousedown="number(8)">8</button>
+        <button onmousedown="number(9)">9</button>
+       
+        <button onmousedown="number(0)">0</button>
+        <button onmousedown="number('.')">.</button>
+        
+        <button onmousedown="deletescreen()" id="del">del</button>
+    </div>    
+        <div class="operations">
+            <button onmousedown="operation(1)" id="add" >+</button>
+            <button onmousedown="operation(2)" id="divide" >/</button>
+            <button onclick="operation(4)" id="multiply" >x</button>
+            <button onmousedown="operation(3)" id="subtract">-</button>
+            <button onmousedown="clearscreen()" id="clear" >CE</button>
+            <button onclick="equal()" id="equal" >=</button>
+        </div>
+        
+    </div>
+</div>
+
+<p id="playerEl"></p>
+
+
+<script src="calculator.js"></script>
+
+</body>
+</html>

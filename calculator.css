@@ -1,0 +1,190 @@
+/*@use "@material/button/styles";*/
+
+body{
+    margin:2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0;
+    background:;
+}
+#calculator{
+    width:;
+    top: 0;
+    left:;
+    right:;
+    bottom:;
+    position:fixed;
+    margin:0 auto;
+    padding: 3px;
+    display:;
+    height: 90%;
+}
+@media screen and (min-width:700px) {
+        #calculator{
+            width:60%;
+            margin:0 20%;
+        }
+        #calculator-keys button{
+            background: none;
+        }
+}
+#calculator-screen{
+    display:;
+    background-color:transparent;
+    height:200px;
+    border:2px solid #1C1B1F;
+    border-radius:5px;
+    padding-bottom: ;
+    padding-left:;
+    flex-wrap:;
+    flex-flow: ;
+    align-items:flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.screenSwipe{
+    position: absolute;
+    background: rgb(1, 104, 13);
+    height: 200px;
+    width:0;
+    top: 5px;
+    border-radius: 3px;
+    transition:width ease-in-out;
+    animation:screenripple 1s forwards;
+}
+#question{
+    font-weight: bold;
+    font-size:50px;
+    float:;
+    display: block;
+    overflow: hidden;
+    color:black;
+   transition:300ms ease;
+}
+#operation{
+    font-weight: bold;
+    font-size:50px;
+    float:;
+    display: block;
+    overflow: hidden;
+    color:red;
+    visibility: hidden;
+   transition:300ms ease;
+}
+#answer{
+    font-weight: bold;
+    font-size:50px;
+    color:rgb(5, 61, 21);
+    position:;
+    margin-top:;
+    display:block;
+    float:;
+    overflow: hidden;
+   transition:300ms ease;
+}
+.calculator-body{
+    display: flex;
+    height: 200px;
+    position: relative;
+}
+#calculator-keys{
+    margin-top:;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    height:100%;
+    width:70%;
+    position: relative;
+}
+#calculator-keys button{
+    color:rgb(16, 15, 15);
+    height:50%;
+    width:30%;
+    font-size: 40px;
+    background:;
+    border-radius: 50%;
+    margin:1%;
+    position: relative;
+    transition:;
+    overflow: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    border: 0;
+}
+.ripple{
+    position:absolute;
+    border-radius:50%;
+    display:inline;
+    transform: scale(0);
+    animation:ripple 400ms forwards;
+    background:rgb(28, 27, 27,0.5);
+}
+.rippleScreen{
+    position:absolute;
+    border-radius:50%;
+    display:inline;
+    transform: scale(0);
+    animation:ripple 5s forwards;
+    background:rgb(28, 27, 27,0.5);
+    margin-top:;
+    z-index: 0;
+}
+.screenwipe{
+    position:absolute;
+    border-radius:;
+    display:block;
+    transform: scale(0);
+    animation:ripple 400ms forwards;
+    background:rgb(28, 27, 27,0.5);
+}
+@keyframes ripple {
+    
+    to{
+        transform: scale(3);
+        opacity:0;
+    }
+}
+@keyframes screenripple {
+    
+    to{
+        width:99%;
+        opacity:;
+    }
+}
+.operations{
+    color:rgb(249, 245, 245);
+    font-size:25px;
+    background:;
+    border: 0px solid black;
+    transition:background-color 0.2s;
+    position: relative;
+    float: right;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.operations button{
+    background-color:rgb(210, 30, 30);
+    color:rgb(249, 245, 245);
+    display: block;
+    height:40%;
+    margin: 2px;
+    font-size:45px;
+    border-radius:5px;
+    border:0;
+}
+#equal{
+    background: rgb(5, 61, 21);
+}
+#clear{
+    background: rgb(5, 5, 5);
+}
+#del{
+    background: rgb(7, 155, 49);
+}
