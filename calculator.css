@@ -156,7 +156,7 @@ body{
     position: relative;
     float: right;
     width:25%;
-    height: 100%;
+    height: fit-content;
 }
 .operations button{
     background-color:rgb(210, 30, 30);
@@ -177,4 +177,13 @@ body{
 }
 #del{
     background: rgb(7, 155, 49);
+}
+
+@media (min-width:300px) {
+    #question, #answer{
+        font-size: 50px;
+    }
+    #operation{
+        margin: 0;
+    }
 }
