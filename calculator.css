@@ -35,13 +35,13 @@ body{
 }
 .screenSwipe{
     position: absolute;
-    background: rgb(1, 104, 13);
+    background: rgb(215, 173, 5);
     height: 30%;
     width:0;
-    top: 5px;
+    top: 3px;
     border-radius: 3px;
     transition:width ease-in-out;
-    animation:screenripple 1s forwards;
+    animation:screenripple 800ms forwards;
 }
 #question{
     font-weight: bold;
@@ -125,14 +125,7 @@ body{
     margin-top:;
     z-index: 0;
 }
-.screenwipe{
-    position:absolute;
-    border-radius:;
-    display:block;
-    transform: scale(0);
-    animation:ripple 400ms forwards;
-    background:rgb(28, 27, 27,0.5);
-}
+
 @keyframes ripple {
     
     to{
@@ -141,10 +134,8 @@ body{
     }
 }
 @keyframes screenripple {
-    
     to{
-        width:99%;
-        opacity:;
+        width:100%;
     }
 }
 .operations{

@@ -174,12 +174,12 @@ function deletescreen(){
    add_ripple(event)
 }
 function clearscreen(){
-    if(num.textContent !==0){
+    if(num.textContent !== '0'){
     activate_screenwipe()
     setTimeout(() => {
         num.textContent="0";
         answer.textContent="0";
-    }, 1000);
+    }, 600);
    
     equalKeyTracker = false;
     addKeyTracker = false;
